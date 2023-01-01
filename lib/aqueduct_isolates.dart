@@ -1,5 +1,5 @@
 /// Support for creating long-lived isolate based workers.
-library aqueduct;
+library aqueduct_isolates;
 
 export 'src/aqueduct.dart';
 export 'src/args.dart';

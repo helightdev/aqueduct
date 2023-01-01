@@ -1,6 +1,6 @@
 import 'dart:isolate';
 
-import 'package:aqueduct/aqueduct.dart';
+import 'package:aqueduct_isolates/aqueduct_isolates.dart';
 
 /// Shared context abstraction for both the main and spawned isolates.
 class AqueductContext {

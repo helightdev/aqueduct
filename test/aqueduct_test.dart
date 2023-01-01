@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:aqueduct/aqueduct.dart';
+import 'package:aqueduct_isolates/aqueduct_isolates.dart';
 import 'package:test/test.dart';
 
 // Declare global variable for use in test

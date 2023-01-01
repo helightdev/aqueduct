@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:collection';
 
-import 'package:aqueduct/aqueduct.dart';
+import 'package:aqueduct_isolates/aqueduct_isolates.dart';
 
 /// A pool consisting of a total of [count] individual [Aqueduct] isolates
 /// which are constructed using [supplier].

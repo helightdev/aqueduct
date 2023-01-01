@@ -1,6 +1,6 @@
 import 'dart:isolate';
 
-import 'package:aqueduct/aqueduct.dart';
+import 'package:aqueduct_isolates/aqueduct_isolates.dart';
 
 extension AqueductExtension on Aqueduct {
   /// Gets the context for the current isolate.

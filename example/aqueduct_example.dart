@@ -1,4 +1,4 @@
-import 'package:aqueduct/aqueduct.dart';
+import 'package:aqueduct_isolates/aqueduct_isolates.dart';
 
 void main() async {
   var cluster = AqueductPool<CalcAqueduct>(5, () => CalcAqueduct());

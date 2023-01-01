@@ -1,6 +1,6 @@
 import 'dart:isolate';
 
-import 'package:aqueduct/aqueduct.dart';
+import 'package:aqueduct_isolates/aqueduct_isolates.dart';
 
 /// Entrypoint for the isolates spawned by [Aqueduct.launch].
 @pragma("vm:entry-point")
