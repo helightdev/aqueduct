@@ -13,7 +13,9 @@ import 'package:aqueduct_isolates/aqueduct_isolates.dart';
 /// to access the data. Further clarification for api surfaces can be provided
 /// using the meta annotations [MainIsolate] and [SpawnedIsolate].
 abstract class Aqueduct {
+
   dynamic contextRaw;
+  bool _isTerminated = false;
 
   /// Run method for the main isolate.
   @MainIsolate()
@@ -45,7 +47,14 @@ abstract class Aqueduct {
     var context =
         AqueductContext(isolate, events, dataPort, null, dataReceiver);
     contextRaw = context;
+    if (_isTerminated) terminate();
     mainRun();
+  }
+
+  /// Stops this isolate.
+  void terminate() {
+    _isTerminated = true;
+    contextRaw?.isolate?.kill();
   }
 
   /// Creates an aqueduct implementation using functions.

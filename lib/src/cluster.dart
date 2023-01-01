@@ -29,6 +29,11 @@ class AqueductPool<T extends Aqueduct> {
     _poll();
   }
 
+  /// Terminates all aqueduct instances of this pool.
+  void stop() async {
+    for (var element in _instances) { element.terminate(); }
+  }
+
   /// Submits a task with the return value [R] and the function [func].
   /// Returns the return value of the task after it has been completed.
   Future<R> task<R>(FutureOr<R> Function(T) func) async {

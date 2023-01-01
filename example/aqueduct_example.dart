@@ -11,6 +11,10 @@ void main() async {
 
   var handshake = HandshakeAqueduct();
   handshake.launch();
+
+  await Future.delayed(Duration(seconds: 30));
+  handshake.terminate();
+  cluster.stop();
 }
 
 class CalcAqueduct extends Aqueduct {
