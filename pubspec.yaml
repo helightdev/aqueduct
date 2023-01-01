@@ -1,6 +1,7 @@
 name: aqueduct
 description: Support for creating long-lived isolate based workers
 version: 1.0.0
+repository: https://github.com/helightdev/aqueduct
 # homepage: https://www.example.com
 
 environment:
